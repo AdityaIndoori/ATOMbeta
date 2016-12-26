@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aditya.ATOMmodifiable">
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.example.aditya.ATOMmodifiable.aInitialSetupAcitivty">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.aditya.ATOMmodifiable.aBluetoothDeviceList"
+            android:theme="@style/Base.Theme.AppCompat.Dialog.FixedSize" />
+        <activity android:name="com.example.aditya.ATOMmodifiable.cProductSelectionActivity" />
+        <activity android:name="com.example.aditya.ATOMmodifiable.dTabletSelectionActivty" />
+        <activity
+            android:name="com.example.aditya.ATOMmodifiable.hSelectedItemPopUpActivity"
+            android:theme="@style/NoTitleDialog" />
+        <activity android:name="com.example.aditya.ATOMmodifiable.jFirstTimeMoneyEnterActivity" />
+        <activity android:name="com.example.aditya.ATOMmodifiable.kRemainingTimesMoneyEnterActivity" />
+        <activity android:name="com.example.aditya.ATOMmodifiable.bUserIntroActivity" />
+        <activity
+            android:name="com.example.aditya.ATOMmodifiable.iMessagePopupActivity"
+            android:theme="@style/NoTitleDialog" />
+        <activity android:name="com.example.aditya.ATOMmodifiable.eNutribarSelectionActivity" />
+        <activity android:name="com.example.aditya.ATOMmodifiable.fDrinksSelectionActivity"></activity>
+    </application>
+
+</manifest>

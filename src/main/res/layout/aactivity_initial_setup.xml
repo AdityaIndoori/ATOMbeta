@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aditya.ATOMmodifiable.aInitialSetupAcitivty">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="blueMenu"
+        android:text="BLUETOOTH"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/atom"
+            android:scaleType="fitCenter"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:padding="48dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/continue_btn"
+        android:backgroundTint="#9b9b9b"
+        android:text="Touch to Continue.."
+        android:fontFamily="sans-serif"
+        android:onClick="toDummyIntroActivity"/>
+
+    <Button
+        android:text="Coin reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="coinReset"
+        android:id="@+id/coinRst"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

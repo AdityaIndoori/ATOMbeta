@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.aditya.ATOMmodifiable.cProductSelectionActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/doc_blur"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:text="Choose a Category"
+        android:id="@+id/textView4"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="12dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView4"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_weight="1"
+            android:id="@+id/relativeTab"
+            android:elevation="8dp"
+            android:background="#5b0099cc"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:onClick="tabletClick">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:id="@+id/tabletImg"
+                android:src="@drawable/tabimg"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/tabletImg"
+                android:text="Tablets"
+                android:textSize="28dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textAllCaps="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_weight="1"
+            android:id="@+id/relativeBar"
+            android:elevation="8dp"
+            android:background="#5b0099cc"
+            android:layout_margin="5dp"
+            android:onClick="barClick">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:id="@+id/barImg"
+                android:src="@drawable/nutri"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/barImg"
+                android:text="Nutri Bar Chocolates"
+                android:textSize="26dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textAllCaps="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_weight="1"
+            android:id="@+id/relativeSanz"
+            android:background="#5b0099cc"
+            android:layout_margin="5dp"
+            android:onClick="sanzClick">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:id="@+id/sanzImg"
+                android:src="@drawable/detsanz"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/sanzImg"
+                android:text="Hand Sanitizer"
+                android:textSize="26dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textAllCaps="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_weight="1"
+            android:id="@+id/relativeCond"
+            android:elevation="8dp"
+            android:background="#5b0099cc"
+            android:layout_margin="5dp"
+            android:onClick="condClick">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:id="@+id/condImg"
+                android:scaleType="centerCrop"
+                android:src="@drawable/condimg"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/condImg"
+                android:text="Condom packets"
+                android:textSize="28dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textAllCaps="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_weight="1"
+            android:id="@+id/relativepads"
+            android:background="#5b0099cc"
+            android:layout_margin="5dp"
+            android:onClick="sanClick">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:id="@+id/padsImg"
+                android:scaleType="centerCrop"
+                android:src="@drawable/whisper"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/padsImg"
+                android:text="Whisper Ultra XXL 360mm"
+                android:textSize="28dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textAllCaps="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_weight="1"
+            android:id="@+id/relativeWipes"
+            android:background="#5b0099cc"
+            android:layout_margin="5dp"
+            android:onClick="wipesClick">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:id="@+id/wipesImg"
+                android:src="@drawable/wetwipes"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/wipesImg"
+                android:text="Wet Wipes"
+                android:textSize="26dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textAllCaps="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_weight="1"
+            android:id="@+id/relativebottle"
+            android:background="#5b0099cc"
+            android:layout_margin="5dp"
+            android:onClick="drinkClick">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:id="@+id/bottleImg"
+                android:scaleType="centerCrop"
+                android:src="@drawable/drinks"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/bottleImg"
+                android:text="Drinks"
+                android:textSize="28dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textAllCaps="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/listPreferredItemHeight"
+            android:layout_weight="0.2"
+            android:id="@+id/backBtnSel"
+            android:elevation="8dp"
+            android:layout_margin="12dp"
+            android:onClick="backSelClick"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Click here to Cancel Transaction"
+                android:gravity="center"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-condensed"
+                android:background="@color/COntinueButton"
+                android:textColor="@android:color/background_dark" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
